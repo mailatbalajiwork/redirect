@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirect Example</title>
+  </head>
+  <body>
+    <label for="input-box">Enter a value:</label>
+    <input type="text" id="input-box">
+    <button onclick="redirect()">Submit</button>
+    
+    <script>
+      function redirect() {
+        const input = document.getElementById('input-box').value;
+        
+        // Redirect to different URLs based on input value
+        switch (input) {
+          case 'seppt':
+            window.location.href = 'https://bim.hoch.in/seppt';
+            break;
+          case 'bimtl':
+            window.location.href = 'https://bim.hoch.in/bimtl';
+            break;
+          case 'bimws':
+            window.location.href = 'https://bim.hoch.in/bimws';
+            break;
+          case 'ammom':
+            window.location.href = 'https://bim.hoch.in/ammom';
+            break;			
+          default:
+            alert('Invalid input');
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
